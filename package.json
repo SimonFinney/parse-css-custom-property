@@ -1,0 +1,51 @@
+{
+  "name": "parse-css-custom-property",
+  "version": "1.0.0",
+  "description": "Parse CSS custom property strings",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@semantic-release/git": "^9.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-compat": "^3.5.1",
+    "eslint-plugin-jsdoc": "^22.1.0",
+    "eslint-plugin-security": "^1.4.0",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "lint-staged": "^10.0.8",
+    "prettier": "^2.0.0",
+    "semantic-release": "^17.0.4"
+  },
+  "scripts": {
+    "build": "rm -rf lib && babel src/index.js -o lib/index.js",
+    "format": "npm run format:precommit '**/*.{js,json,md,yml}'",
+    "format:precommit": "prettier --ignore-path .gitignore --write",
+    "lint": "npm run lint:precommit .",
+    "lint:precommit": "eslint --ignore-path .gitignore --fix",
+    "semantic-release": "semantic-release",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/SimonFinney/parse-css-custom-property.git"
+  },
+  "keywords": [
+    "parse",
+    "css custom properties"
+  ],
+  "author": "Simon Finney <simonjfinney@gmail.com> (https://simonfinney.github.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimonFinney/parse-css-custom-property/issues"
+  },
+  "homepage": "https://github.com/SimonFinney/parse-css-custom-property#readme",
+  "files": [
+    "lib"
+  ]
+}

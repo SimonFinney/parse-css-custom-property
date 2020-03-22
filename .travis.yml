@@ -1,0 +1,10 @@
+language: node_js
+
+after_success: npm run build
+
+deploy:
+  provider: script
+  script: npm run semantic-release
+  skip_cleanup: true
+  on:
+    branch: master

@@ -1,0 +1,14 @@
+{
+  "env": {
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:compat/recommended",
+    "plugin:jsdoc/recommended",
+    "plugin:security/recommended",
+    "prettier"
+  ],
+  "parser": "babel-eslint",
+  "plugins": ["jsdoc", "security"]
+}

@@ -1,0 +1,4 @@
+{
+  '*.{js,json,md,yml}': ['npm run format:precommit'],
+  '*.js': ['npm run lint:precommit', 'npm run test'],
+}
