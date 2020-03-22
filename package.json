@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com/SimonFinney/parse-css-custom-property.git"
+    "url": "git@github.com:SimonFinney/parse-css-custom-property.git"
   },
   "keywords": [
     "parse",
