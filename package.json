@@ -1,6 +1,6 @@
 {
   "name": "parse-css-custom-property",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parse CSS custom property strings",
   "main": "lib/index.js",
   "devDependencies": {
